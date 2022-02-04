@@ -1,0 +1,243 @@
+
+@font-face{ 
+    font-family: 'kohinoor';
+    src: url('../fonts/kohinoor.woff');
+     src: url('../fonts/kohinoor.woff2')
+}
+
+
+
+:root{
+	--font-primary: 'moniker';
+  --font-primary-light: 'moniker-light';
+	--font-title: 'kohinoor';
+	--font-title-bold: 'kohinoor-bold';
+
+    --primary:#000;
+    --secondary:#fff;
+    --pink-color:#ef7073;
+    --red-color:#df416b;
+    --blue-color:#09577c;
+    --light-pink-color:#fec6ad;
+    --grey-color:#333333;
+    --dark-grey-color:#1e1e1e;
+   
+}
+
+
+/*// --------- elements --------------*/
+
+html {
+  position: relative;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: 0;
+  background-color: #fff;
+  color: var(--grey-color);
+  font-family: var(--font-title);
+  font-weight: normal;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1, h2, h3{
+  letter-spacing: 0;
+  line-height: 1.2;
+  font-family: var(--font-title-bold);
+  text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-weight: bold;
+  line-height: 1;
+}
+
+h1,h2 {
+  margin-bottom: 25px;
+}
+
+h1 { font-size: 3em; }
+h2 { font-size: 2.5em; }
+h3 { font-size: 1.6em; margin-bottom: 1.5rem; }
+h4 { font-size: 1.2em; font-weight: normal;}
+h5 { font-size: .7em;  font-weight: normal;}
+p { margin: 0; letter-spacing: .4px; line-height: 1.6; margin-bottom: 1.5rem; font-family: var(--font-primary-light); font-weight: 300;}
+p:last-child {
+  margin-bottom: 0;
+}
+p+h2, p+h3 {
+  margin-top: 40px;
+}
+h2+p, h3+p {
+  margin-top: 35px;
+}
+p.justify, div.justify {
+  text-align: justify;
+}
+
+p a { text-decoration: underline; }
+
+input {border-radius: 0;}
+ textarea {
+-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  }
+
+input:focus {
+  outline: none;
+}
+textarea:focus {
+  outline: none;
+}
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a{
+  color: #000;
+  text-decoration: none;
+}
+button {
+  color: #fff;
+  border-style: none;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+button:focus {outline: none; }
+
+select { -webkit-appearance: none; -moz-appearance: none; padding: 0 10px; }
+
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  transition-timing-function: linear; transition: .3s;
+  -webkit-transition-timing-function: linear;
+  -webkit-transition: .3s;
+}
+
+
+
+/*------- layout ------------------*/
+
+.page-wrapper {
+  padding-top: 130px;
+}
+
+section {
+  background-color: #fff;
+}
+
+.container {
+	max-width: 1440px;
+	width: 100%;
+	padding-left: 2rem;
+	padding-right: 2rem;
+  margin: auto;
+}
+
+.section-padding-top { padding-top: 6rem; }
+.section-padding-bottom { padding-bottom: 6rem; }
+
+.section-padding-large-top { padding-top: 12rem; }
+.section-padding-large-bottom { padding-bottom: 12rem; }
+
+
+.relative {position: relative;}
+
+.bg-dark-grey {background-color: var(--dark-grey-color);}
+.bg-white {background-color: #fff;}
+.bg-pink-color {background-color: var(--pink-color);}
+.bg-light-pink-color {background-color: var(--light-pink-color);}
+
+.light-pink-color {color: var(--light-pink-color);}
+.pink-color {color: var(--pink-color);}
+.red-color {color: var(--red-color);}
+.blue-color {color: var(--blue-color);}
+
+.text-white {color: #fff;}
+
+
+/*------- End layout ------------------*/
+
+
+
+/*------- Headder ------------------*/
+
+
+
+@media screen and (max-width: 1020px) {
+  
+}
+
+
+
+@media screen and (max-width: 700px) {
+	html {
+		font-size: 15px;
+	}
+	body {
+		font-size: 15px;
+	}
+
+	h1 { font-size: 2.5em; }
+	h3 { font-size: 1.5em;}
+	h4 { font-size: 1em; }
+  h5 { font-size: .6em; }
+
+
+	/*------- layout ------------------*/
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+	.section-padding-top { padding-top: 8rem; }
+	.section-padding-bottom { padding-bottom: 8rem; }
+
+  .section-padding-large-top { padding-top: 10rem; }
+  .section-padding-large-bottom { padding-bottom: 10rem; }
+
+
+  /*Header*/
+  .main-header {
+    padding: .5rem 0;
+  }
+}
+
+
+@media screen and (max-width: 460px) {
+
+  .main-header-nav-list li.main-nav-icon-profile,
+  .main-header-nav-list li.main-nav-icon-cart {
+    display: none;
+  }
+
+  .moible-nav-icons-list .main-nav-icon-profile, .moible-nav-icons-list .main-nav-icon-cart {
+    display: block;
+  }
+
+}
+
+
+
+
