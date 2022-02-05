@@ -1,26 +1,88 @@
 
 @font-face{ 
-    font-family: 'kohinoor';
-    src: url('../fonts/kohinoor.woff');
-     src: url('../fonts/kohinoor.woff2')
+    font-family: 'montserrat';
+    src: url('../fonts/montserrat/Montserrat-Regular.ttf');
+     src: url('../fonts/montserrat/Montserrat-Regular.ttf')
+}
+
+@font-face{ 
+  font-family: 'montserrat-bold';
+  src: url('../fonts/Montserrat/Montserrat-Bold.ttf');
+   src: url('../fonts/montserrat/Montserrat-Bold.ttf')
+}
+
+@font-face{ 
+  font-family: 'montserrat-semibold';
+  src: url('../fonts/montserrat/Montserrat-SemiBold.ttf');
+   src: url('../fonts/montserrat/Montserrat-SemiBold.ttf')
+}
+
+@font-face{ 
+  font-family: 'montserrat-medium';
+  src: url('../fonts/montserrat/Montserrat-Medium.ttf');
+   src: url('../fonts/montserrat/Montserrat-Medium.ttf')
+}
+
+@font-face{ 
+  font-family: 'montserrat-light';
+  src: url('../fonts/montserrat/Montserrat-Light.ttf');
+   src: url('../fonts/montserrat/Montserrat-Light.ttf')
+}
+
+
+@font-face{ 
+  font-family: 'poppins';
+  src: url('../fonts/Poppins/Poppins-Regular.ttf');
+   src: url('../fonts/Poppins/Poppins-Regular.ttf')
+}
+
+@font-face{ 
+  font-family: 'poppins-bold';
+  src: url('../fonts/Poppins/Poppins-Bold.ttf');
+   src: url('../fonts/Poppins/Poppins-Bold.ttf')
+}
+
+@font-face{ 
+  font-family: 'poppins-semibold';
+  src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
+   src: url('../fonts/Poppins/Poppins-SemiBold.ttf')
+}
+
+@font-face{ 
+  font-family: 'poppins-medium';
+  src: url('../fonts/Poppins/Poppins-Medium.ttf');
+   src: url('../fonts/Poppins/Poppins-Medium.ttf')
+}
+
+@font-face{ 
+  font-family: 'poppins-light';
+  src: url('../fonts/Poppins/Poppins-Light.ttf');
+   src: url('../fonts/Poppins/Poppins-Light.ttf')
 }
 
 
 
-:root{
-	--font-primary: 'moniker';
-  --font-primary-light: 'moniker-light';
-	--font-title: 'kohinoor';
-	--font-title-bold: 'kohinoor-bold';
 
-    --primary:#000;
-    --secondary:#fff;
-    --pink-color:#ef7073;
-    --red-color:#df416b;
-    --blue-color:#09577c;
-    --light-pink-color:#fec6ad;
-    --grey-color:#333333;
-    --dark-grey-color:#1e1e1e;
+:root{
+	--font-primary: 'montserrat';
+	--font-primary-bold: 'montserrat-bold';
+  --font-primary-semi-bold: 'montserrat-semibold';
+	--font-primary-medium: 'montserrat-medium';
+  --font-primary-light: 'montserrat-light';
+
+  --font-secondary: 'poppins';
+	--font-secondary-bold: 'poppins-bold';
+  --font-secondary-semi-bold: 'poppins-semibold';
+	--font-secondary-medium: 'poppins-medium';
+  --font-secondary-light: 'poppins-light';
+
+
+    --primary:#2c2c2c;
+    --secondary:#fffdfd;
+    --theme-yellow:#FEBA33;
+    --black:#000;
+    --white:#fff;
+   
    
 }
 
@@ -39,8 +101,8 @@ body {
   line-height: 1.3;
   letter-spacing: 0;
   background-color: #fff;
-  color: var(--grey-color);
-  font-family: var(--font-title);
+  color: var(--primary);
+  font-family: var(--font-secondary);
   font-weight: normal;
 }
 
@@ -51,14 +113,16 @@ body {
 h1, h2, h3{
   letter-spacing: 0;
   line-height: 1.2;
-  font-family: var(--font-title-bold);
+  font-family: var(--font-primary-bold);
   text-transform: uppercase;
+
 }
 
 h1, h2, h3, h4, h5, h6{
   margin: 0;
   line-height: 1.5;
   letter-spacing: 2px;
+  font-family: var(--font-primary-bold);
 }
 
 h1 {
@@ -88,8 +152,14 @@ h2+p, h3+p {
 p.justify, div.justify {
   text-align: justify;
 }
+p{
+  font-family: var(--font-secondary);
+}
+a { 
+  text-decoration: underline;
+  font-family: var(--font-secondary);
 
-p a { text-decoration: underline; }
+}
 
 input {border-radius: 0;}
  textarea {
