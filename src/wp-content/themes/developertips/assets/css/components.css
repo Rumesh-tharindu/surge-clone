@@ -33,3 +33,12 @@ header#masthead {
     font-family: var(--font-secondary-medium);
 }
 /* End header  */
+
+/* headings */
+.headings {
+    margin-bottom: 6rem;
+}
+h1.heading-title {
+    text-align: center;
+}
+/* End headings */

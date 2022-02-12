@@ -22,6 +22,8 @@ require_once(get_template_directory().'/functions/styles.php');
 
 require_once(get_template_directory().'/functions/menus.php');
 
+require_once(get_template_directory().'/functions/custome-post-type.php');
+
 
 
 

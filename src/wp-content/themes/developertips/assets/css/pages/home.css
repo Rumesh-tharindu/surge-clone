@@ -1,0 +1,141 @@
+/* section page hero */
+.page-hero{
+    background-color: var(--theme-yellow);
+    height: calc(100vh - 80px);
+    position: relative;
+}
+.page-hero__wrapper {
+    display: flex;
+}
+.page-hero__left {
+    width: 50%;
+}
+.page-hero__left img{
+    width: 65%;
+}
+.page-hero__right h1{
+    margin-bottom: 5rem;
+    font-size: 4rem;
+}
+.page-hero__right {
+    width: 50%;
+}
+.form form{
+    display: flex;
+    max-width: 70%;
+}
+
+.form form input{
+    padding: 1rem;
+    border: 0;
+    width: 100%;
+    font-family: var(--font-secondary);
+    text-transform: uppercase;
+    font-style: italic;
+}
+.form form button{
+    background: var(--primary);
+    text-transform: uppercase;
+    font-family: var(--font-secondary);
+    padding: 1rem 2rem;
+    margin-left: 0.4rem;
+}
+.bottom-triangle {
+    position: absolute;
+    bottom: -1px;
+    display: flex;
+    width: 100%;
+    z-index: 1;
+}
+.bottom-triangle svg{
+    fill: var(--secondary);
+}
+/* End section page hero */
+
+/* youtube info */
+.yt-info {
+    margin-top: -10rem;
+    position: relative;
+    z-index: 9;
+    background: transparent;
+}
+.yt-info__wrapper {
+    display: flex;
+    padding: 5rem;
+    background: var(--secondary);
+    gap: 2rem;
+    box-shadow: 0px 0px 40px 0px var(--box-shadow-color);
+}
+.yt-info_left {
+    width: 50%;
+    
+}
+.yt-info_right {
+    width: 50%;
+    padding: 1rem;
+    box-shadow: 0px 0px 40px 0px var(--box-shadow-color);
+}
+.yt-info_right__img img{
+    width: 100%;
+}
+/* End youtube info */
+
+/* learn slider */
+.ls-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.ls-logo h1.php i{
+    color: #4F5B93;
+}
+.ls-logo h1.wordpress i{
+    color: rgb(68, 65, 64);
+}
+.ls-logo h1.html i{
+    color: #e34c26;
+}
+.ls-logo h1.css i{
+    color: #264de4;
+}
+.ls-logo h1.js i{
+    color: #f0db4f;
+}
+
+.ls-logo h1.react i{
+    color: rgb(97, 219, 251);
+}
+
+.ls-logo h1.shopify i{
+    color: rgb(149, 191, 71);
+}
+.ls-logo h1.laravel i{
+    color: #f9322c;
+}
+.ls-logo h1.node i{
+    color: #3c873a;
+}
+
+.learn-slider  .heading-title{
+    position: relative;
+}
+
+.learn-slider  .heading-title::before{
+    content: '';
+    height: 2px;
+    width: 30%;
+    position: absolute;
+    background: var(--primary);
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.learn-slider .heading-title::after{
+    content: '';
+    height: 2px;
+    width: 30%;
+    position: absolute;
+    background: var(--primary);
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}

@@ -46,31 +46,16 @@
 			  <div class="header-right">
                   <nav>
 					  <ul>
-						  <li>
-							  <a href="">
-                                Home
-							  </a>
-						  </li>
-						  <li>
-							  <a href="">
-								  Blog
-							  </a>
-						  </li>
-						  <li>
-							  <a href="">
-								  Tutorial
-							  </a>
-						  </li>
-						  <li>
-							  <a href="">
-								  About
-							  </a>
-						  </li>
-						  <li>
-							  <a href="">
-								  Contact
-							  </a>
-						  </li>
+					  <?php
+              wp_nav_menu(
+                  array(
+                      'container'  => '',
+                      'items_wrap' => '%3$s',
+                      'theme_location' => 'primary',
+                  )
+              );
+
+          ?>
 					  </ul>
 				  </nav>
 			  </div>
