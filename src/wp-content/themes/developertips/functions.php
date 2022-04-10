@@ -11,7 +11,7 @@
 
 add_theme_support( 'title-tag' );
 add_theme_support('menus');
-
+add_theme_support( 'post-thumbnails'); 
 /*  =============================
     Includes
     ============================= */
@@ -23,6 +23,8 @@ require_once(get_template_directory().'/functions/styles.php');
 require_once(get_template_directory().'/functions/menus.php');
 
 require_once(get_template_directory().'/functions/custome-post-type.php');
+
+require_once(get_template_directory().'/functions/custome-post-type-youtube.php');
 
 
 

@@ -142,12 +142,238 @@ get_header();
 		   </div>
 		 </section>
 	   <!-- End learn slider -->
-
-	   <section class="latest-blog">
+   
+	<!-- latest blog article -->
+	   <section class="latest-blog section-padding-top section-padding-bottom">
 		   <div class="container">
-			   
+		   <div class="section-title">
+				<h3>
+					Latest Blog Article
+				</h3>
+			</div>
+			<div class="lt-blog-wrapper">
+			<?php
+      $the_query = new WP_Query( array(
+    
+      'posts_per_page' => 1,
+      'orderby' => 'post_date',
+      'order' => 'DESC',
+      'post_type' => 'blogs', 
+      'post_status' => 'publish'
+   )); 
+?>
+
+			  
+
+		
+
+<?php if ( $the_query->have_posts() ) : ?>
+  <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+  <div class="lt-blog__thumbnial">
+				  <a href="">
+				  <?php echo  the_post_thumbnail('large'); ?>
+				  </a>
+			  </div>
+
+			  <div class="lt-blog-right__content">
+				  <div class="publication-meta">
+                    <?php
+					$posttags = get_the_tags();
+					if ($posttags) {
+					  foreach($posttags as $tag) {
+						echo '<a href="' . get_tag_link($tag->term_id) . '">' . $tag->name . '</a>';
+					  }
+					}
+					?>
+				  </div>
+				  <h1> <?php the_title(); ?></h1>
+				  <div class="lt-blog-content">
+				  <p><?php the_excerpt(); ?></p>
+                  
+				  <div class="lt-blog-bottom__meta">
+					  <div class="author-info">
+                           <div class="author-profile">
+						   <?php echo get_avatar( get_the_author_meta( 'ID' ),40); ?>
+						   </div>
+						   <div class="auther-name">
+							   <p>Written by <span><?php echo  get_the_author_meta( 'display_name', $post->post_author ); ?></span></p>
+						   </div>
+						   <div class="publication-date">
+                             <p><?php echo  get_the_date(); ?></p>
+						   </div>
+					  </div>
+				  </div>
+                   
+
+				  </div>
+				  
+			  </div>
+   
+
+  <?php endwhile; ?>
+  <?php wp_reset_postdata(); ?>
+<?php endif; ?>
+    
+			</div>
 		   </div>
 	   </section>
+	  <!-- End latest blog article -->
+
+	  <!-- Featured Blog article -->
+
+	  <section class="features-blogs section-padding-top section-padding-bottom">
+		  <div class="container">
+		  <div class="section-title">
+				<h3>
+					Featured Blog Article
+				</h3>
+			</div>
+            <div class="dt-card-wrapper">
+						<?php
+				$the_query = new WP_Query( array(
+				
+				'posts_per_page' => 3,
+				'orderby' => 'post_date',
+				'order' => 'DESC',
+				'post_type' => 'blogs', 
+				'category_name'=>'featured',
+				'post_status' => 'publish'
+			)); 
+			?>
+			<?php if ( $the_query->have_posts() ) : ?>
+  <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+  <div class="dt-card">
+                    <div class="dt-card__header">
+					<?php echo  the_post_thumbnail(); ?>
+					</div>
+					<div class="dt-card__footer">
+						
+			  <div class="dt-card-right__content">
+				  <div class="publication-meta">
+                    <?php
+					$posttags = get_the_tags();
+					if ($posttags) {
+					  foreach($posttags as $tag) {
+						echo '<a href="' . get_tag_link($tag->term_id) . '">' . $tag->name . '</a>';
+					  }
+					}
+					?>
+				  </div>
+				  <h4> <?php the_title(); ?></h4>
+				  <div class="dt-card-content">
+				  <p><?php the_excerpt(); ?></p>
+                  
+				  <div class="dt-bottom__meta">
+					  <div class="author-info">
+                           <div class="author-profile">
+						   <?php echo get_avatar( get_the_author_meta( 'ID' ),40); ?>
+						   </div>
+						   <div class="auther-name">
+							   <p> <span><?php echo  get_the_author_meta( 'display_name', $post->post_author ); ?></span></p>
+						   </div>
+						   <div class="publication-date">
+                             <p><?php echo  get_the_date(); ?></p>
+						   </div>
+					  </div>
+				  </div>
+                   
+
+				  </div>
+				  
+			  </div>
+					</div>
+			</div>
+  
+
+   
+
+  <?php endwhile; ?>
+  <?php wp_reset_postdata(); ?>
+<?php endif; ?>
+			
+			</div>
+		  </div>
+	  </section>
+
+	  <!-- End Featured Blog article -->
+
+	    <!-- Featured Youtube video -->
+
+		<section class="featured-youtube section-padding-top section-padding-bottom">
+		  <div class="container">
+		  <div class="section-title">
+				<h3>
+					Featured Youtube video
+				</h3>
+			</div>
+            <div class="dt-card-wrapper">
+						<?php
+				$the_query = new WP_Query( array(
+				
+				'posts_per_page' => 3,
+				'orderby' => 'post_date',
+				'order' => 'DESC',
+				'post_type' => 'youtube', 
+				'category_name'=>'featured',
+				'post_status' => 'publish'
+			)); 
+			?>
+			<?php if ( $the_query->have_posts() ) : ?>
+  <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+  <div class="dt-card">
+                    <div class="dt-card__header">
+					<?php echo  the_post_thumbnail(); ?>
+
+					<div class="play-btn">
+						<img src="<?php echo get_template_directory_uri() ?>/assets/images/icons/play-icon.svg" alt="">
+					</div>
+					</div>
+					<div class="dt-card__footer">
+						
+			  <div class="dt-card-right__content">
+				  <div class="publication-meta">
+                    <?php
+					$posttags = get_the_tags();
+					if ($posttags) {
+					  foreach($posttags as $tag) {
+						echo '<a href="' . get_tag_link($tag->term_id) . '">' . $tag->name . '</a>';
+					  }
+					}
+					?>
+				  </div>
+				  <h4> <?php the_title(); ?></h4>
+				  <div class="dt-card-content">
+				  <p><?php the_excerpt(); ?></p>
+                  
+				  <div class="dt-bottom__meta">
+					  <div class="author-info">
+
+						  
+						   <div class="publication-date">
+                             <p><span class='publication-date-label'>Uploaded on </span> <?php echo  get_the_date(); ?></p>
+						   </div>
+					  </div>
+				  </div>
+                   
+
+				  </div>
+				  
+			  </div>
+					</div>
+			</div>
+  
+
+   
+
+  <?php endwhile; ?>
+  <?php wp_reset_postdata(); ?>
+<?php endif; ?>
+			
+			</div>
+		  </div>
+	  </section>
+
+	  <!-- End Featured Youtube video -->
 	</main><!-- #main -->
 
 <?php

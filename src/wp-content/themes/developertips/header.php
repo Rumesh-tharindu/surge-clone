@@ -42,6 +42,16 @@
 					</svg>
 
 				 </div>
+						<div class="menu-btn__wrapper">
+					<h4>
+						Menu
+					</h4>
+					<button class="hamberger-btn">
+						<span class="hamberger-icon"> </span>
+						<span class="hamberger-icon"> </span>
+						<span class="hamberger-icon"> </span>
+					</button>
+				</div>
 			  </div>
 			  <div class="header-right">
                   <nav>
