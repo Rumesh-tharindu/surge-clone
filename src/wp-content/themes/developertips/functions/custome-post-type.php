@@ -3,9 +3,9 @@
 function custom_post_type() {
  
     $labels = array(
-        'name'                => _x( 'blogs', 'Post Type General Name', 'text_domain' ),
+        'name'                => _x( 'blog', 'Post Type General Name', 'text_domain' ),
         'singular_name'       => _x( 'blog', 'Post Type Singular Name', 'text_domain' ),
-        'menu_name'           => __( 'Blogs', 'text_domain' ),
+        'menu_name'           => __( 'Blog', 'text_domain' ),
         'parent_item_colon'   => __( 'Parent Item:', 'text_domain' ),
         'all_items'           => __( 'All Items', 'text_domain' ),
         'view_item'           => __( 'View Item', 'text_domain' ),
@@ -18,7 +18,7 @@ function custom_post_type() {
         'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
     );
     $args = array(
-        'label'               => __( 'blogs', 'text_domain' ),
+        'label'               => __( 'blog', 'text_domain' ),
         'description'         => __( 'Post Type Description', 'text_domain' ),
         'labels'              => $labels,
         'supports'            => array('title', 'editor', 'thumbnail', 'excerpt'),
@@ -40,7 +40,7 @@ function custom_post_type() {
     );
 
   
-    register_post_type( 'blogs', $args );
+    register_post_type( 'blog', $args );
  
 }
  

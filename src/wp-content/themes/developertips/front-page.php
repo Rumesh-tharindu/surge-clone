@@ -139,7 +139,10 @@ get_header();
 				
 			</div>
 			   </div>
+			   <img src="<?php echo get_template_directory_uri() ?>/assets/images/logo-carousel.png" alt="">
 		   </div>
+
+		   
 		 </section>
 	   <!-- End learn slider -->
    
@@ -158,7 +161,7 @@ get_header();
       'posts_per_page' => 1,
       'orderby' => 'post_date',
       'order' => 'DESC',
-      'post_type' => 'blogs', 
+      'post_type' => 'blog', 
       'post_status' => 'publish'
    )); 
 ?>
@@ -235,7 +238,7 @@ get_header();
 				'posts_per_page' => 3,
 				'orderby' => 'post_date',
 				'order' => 'DESC',
-				'post_type' => 'blogs', 
+				'post_type' => 'blog', 
 				'category_name'=>'featured',
 				'post_status' => 'publish'
 			)); 

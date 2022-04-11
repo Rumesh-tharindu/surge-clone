@@ -97,113 +97,6 @@
 }
 /* End youtube info */
 
-/* learn slider */
-.ls-wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-.ls-logo h1 {
-    font-size: 5rem;
-}
-.ls-logo h1.php i{
-    color: #4F5B93;
-}
-.ls-logo h1.wordpress i{
-    color: rgb(68, 65, 64);
-}
-.ls-logo h1.html i{
-    color: #e34c26;
-}
-.ls-logo h1.css i {
-    color: #081750;
-}
-.ls-logo h1.js i{
-    color: #f0db4f;
-}
-
-.ls-logo h1.react i{
-    color: rgb(97, 219, 251);
-}
-
-.ls-logo h1.shopify i{
-    color: rgb(149, 191, 71);
-}
-.ls-logo h1.laravel i{
-    color: #f9322c;
-}
-.ls-logo h1.node i{
-    color: #3c873a;
-}
-
-.learn-slider  .heading-title{
-    position: relative;
-}
-
-.learn-slider  .heading-title::before{
-    content: '';
-    height: 2px;
-    width: 30%;
-    position: absolute;
-    background: var(--primary);
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.learn-slider .heading-title::after{
-    content: '';
-    height: 2px;
-    width: 30%;
-    position: absolute;
-    background: var(--primary);
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-@media(max-width:1300px){
-    .learn-slider .heading-title::before {
-        content: '';
-        height: 2px;
-        width: 25%;
-        position: absolute;
-        background: var(--primary);
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    .learn-slider .heading-title::after {
-        content: '';
-        height: 2px;
-        width: 25%;
-        position: absolute;
-        background: var(--primary);
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-}
-@media(max-width:1024px){
-    .learn-slider .heading-title::before {
-        content: '';
-        height: 2px;
-        width: 20%;
-        position: absolute;
-        background: var(--primary);
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    .learn-slider .heading-title::after {
-        content: '';
-        height: 2px;
-        width: 20%;
-        position: absolute;
-        background: var(--primary);
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-}
-/* end learn slider */
 
 /* latest blog */
 .lt-blog-wrapper {
@@ -302,6 +195,7 @@ margin-right: 1rem;
 .dt-card-wrapper {
     display: flex;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 .dt-card {
     width: calc(33% - 2rem );
@@ -330,6 +224,7 @@ margin-right: 1rem;
     display: flex;
     flex-direction: column;
     flex: 1;
+    text-align: left;
 }
 .dt-card-content {
     flex: 1;
