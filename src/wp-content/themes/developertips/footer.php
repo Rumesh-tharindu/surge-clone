@@ -10,6 +10,7 @@
  */
 
 ?>
+</main><!-- #main -->
    <!-- footer -->
 	<footer  class="site-footer section-padding-top section-padding-bottom">
 		<div class="container">

@@ -1,0 +1,61 @@
+<?php
+/**
+ * The template for displaying all single posts
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ *
+ * @package yourretailer
+ */
+get_header();
+?>
+
+<div class="custom-post  ">
+ 
+<section class="article-header section-padding-top " style=" background-color:<?php echo get_field('article_header_bg_color') ?>">
+    <div class="article-header-content">
+        <div class="container">
+        <div class="article-title">
+           <h1><?php single_post_title() ?></h1>
+       </div>
+       <div class="article-meta">
+            <div class="author-info">
+                <div class="author-profile">
+                <?php 
+                echo get_avatar(get_the_author_meta( 'ID', $post->post_author ),50);
+                 ?>
+                </div>
+                <div class="auther-name">
+                    <p> by <span><?php echo  get_the_author_meta( 'display_name', $post->post_author ); ?></span></p>
+                </div>
+                <div class="publication-date">
+                    <p>Updated - <?php echo  get_the_date(); ?></p>
+                </div>
+                </div>
+       </div>
+       <div class="article-thumbnail">
+    <?php echo  the_post_thumbnail(); ?>
+    </div>
+        </div>
+       
+    </div>
+   
+</section>
+
+<section class="article-content section-padding-bottom">
+   
+        <div class="post-content">
+        <div class="container">
+        <?php echo the_content()?>
+        </div>
+        
+    </div>
+
+  
+</section>
+
+
+</div>
+
+<?php
+get_footer();
+?>

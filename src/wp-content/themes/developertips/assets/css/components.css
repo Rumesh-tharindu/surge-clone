@@ -6,6 +6,9 @@ header#masthead {
     z-index: 9999;
     
 }
+.single-blog header#masthead{
+    background-color: var(--secondary);
+}
 .site-header.fixed{
     position: fixed;
     width: 100%;
@@ -196,3 +199,47 @@ footer .footer-bottom {
 
 /* page title */
 
+
+/* single post  */
+
+.article-header-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.article-header-content .article-title h1{
+    color: var(--secondary);
+    text-align: center;
+}
+
+.article-header-content .author-info {
+    justify-content: center;
+}
+.article-header-content .article-meta {
+    color: var(--secondary);
+}
+.article-header-content .auther-name p span {
+    font-weight: normal;
+}
+.article-header-content .article-thumbnail img{
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0px 0px 40px 0px var(--box-shadow-color);
+    object-fit: cover;
+}
+.article-header-content .article-thumbnail {
+    max-width: 1000px;
+    margin-bottom: -6rem;
+    margin-left: auto;
+    margin-top: 2rem;
+
+}
+
+.custom-post .article-content {
+    padding-top: 10rem;
+}
+.custom-post .post-content {
+    max-width: 1000px;
+    margin: auto;
+}
+/* single post  */

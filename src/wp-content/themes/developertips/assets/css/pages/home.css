@@ -97,6 +97,46 @@
 }
 /* End youtube info */
 
+/* tech logo garden */
+.logo-garden-bg{
+    background-image: url('/wp-content/uploads/2022/04/logo-carousel.png');
+    width: 4000px;
+    height: 275px;
+    animation: logo-garden-slide 60s linear infinite;
+}
+.tech-logo-garden{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.tech-logo-garden:after {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(to right,#fff 0,rgba(255,255,255,0) 25%,rgba(255,255,255,0) 75%,#fff 100%);
+}
+.logo-garden-bg:hover {
+    animation-play-state: paused
+}
+
+@keyframes logo-garden-slide {
+    0%{
+        transform: translateX(0)
+    }
+
+    100%{
+        transform: translateX(-2398px)
+    }
+}
+
+/* End  tech logo garden */
+
+
+
 
 /* latest blog */
 .lt-blog-wrapper {
@@ -202,6 +242,12 @@ margin-right: 1rem;
     box-shadow: 0px 0px 40px 0px var(--box-shadow-color);
     display: flex;
     flex-direction: column;
+}
+
+.dt-card a {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 .dt-card__header {
     position: relative;

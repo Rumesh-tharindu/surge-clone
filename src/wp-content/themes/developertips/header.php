@@ -72,3 +72,5 @@
 		  </div>
 	  </div>
 	</header><!-- #masthead -->
+
+	<main id="primary" class="site-main">

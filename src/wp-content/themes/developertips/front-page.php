@@ -15,7 +15,7 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	
 	<!-- section page hero -->
      <section class="page-hero section-padding-top section-padding-bottom">
 
@@ -89,57 +89,14 @@ get_header();
 					   You Will Learn !
 				   </h1>
 			   </div>
-			   <div class="ls-wrapper">
-			  <div class="owl-carousel owl-theme ls-slider">
-					<div class="ls-item">
-						<div class="ls-logo">
-					   <h1 class="php"><i class="fab fa-php"></i></h1>
-						</div>
-					</div>
-					<div class="ls-item">
-						<div class="ls-logo">
-					   <h1 class="wordpress"><i class="fab fa-wordpress"></i></h1>
-						</div>
-					</div>
-					<div class="ls-item">
-						<div class="ls-logo">
-					   <h1 class="html"><i class="fab fa-html5"></i></h1>
-						</div>
-					</div>
-					<div class="ls-item">
-						<div class="ls-logo">
-					   <h1 class="css"><i class="fab fa-css3"></i></h1>
-						</div>
-					</div>
-					<div class="ls-item">
-						<div class="ls-logo">
-					   <h1 class="js"><i class="fab fa-js"></i></h1>
-						</div>
-					</div>
-					<div class="ls-item">
-						<div class="ls-logo">
-					   <h1 class="react"><i class="fab fa-react"></i></h1>
-						</div>
-					</div>
-					<div class="ls-item">
-						<div class="ls-logo">
-					   <h1 class="shopify"><i class="fab fa-shopify"></i></h1>
-						</div>
-					</div>
-					<div class="ls-item">
-						<div class="ls-logo">
-					   <h1 class="node"><i class="fab fa-node"></i></h1>
-						</div>
-					</div>
-					<div class="ls-item">
-						<div class="ls-logo">
-					   <h1 class="laravel"><i class="fab fa-laravel"></i></h1>
-						</div>
-					</div>
-				
-			</div>
+			   <div class='tech-logo-garden'>
+				   <div class="logo-garden-bg">
+
+				   </div>
 			   </div>
-			   <img src="<?php echo get_template_directory_uri() ?>/assets/images/logo-carousel.png" alt="">
+			   </div>
+			  
+			   
 		   </div>
 
 		   
@@ -377,7 +334,7 @@ get_header();
 	  </section>
 
 	  <!-- End Featured Youtube video -->
-	</main><!-- #main -->
+	
 
 <?php
 
