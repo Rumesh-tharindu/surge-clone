@@ -41,16 +41,43 @@ get_header();
    
 </section>
 
-<section class="article-content section-padding-bottom">
+<section class="article-content section-padding-bottom section-padding-top">
    
-        <div class="post-content">
-        <div class="container">
-        <?php echo the_content()?>
-        </div>
+      
+     
+            <div class="post">
+            <div class="container">
+                <div class="post-wrapper">
+                    <div class="post-content">
+                    <?php echo the_content()?>
+                    </div>
+                    
+                </div>
+
+            <div class="share-btns">
+            <?php echo do_shortcode('[sharethis-inline-buttons]') ?>
+            </div>
+               
+            </div>
+       
         
     </div>
-
+ 
   
+</section>
+
+<section class="comment-section  section-padding-bottom">
+    <div class="comment">
+         <div class="container">
+             <?php
+               
+             	if ( comments_open() || get_comments_number() ) {
+                  
+                  echo comments_template();
+                 }
+             ?>
+         </div>
+    </div>
 </section>
 
 

@@ -248,7 +248,17 @@ section {
 
 .text-white {color: #fff;}
 
+.section-title {
+  text-align: center;
+}
 
+.dt-row{
+  display: flex;
+}
+
+.dt-column{
+  width: 50%;
+}
 /*------- End layout ------------------*/
 
 
