@@ -206,7 +206,9 @@ a {
   -webkit-transition: .3s;
 }
 
-
+i{
+  margin-right: .5rem;
+}
 
 /*------- layout ------------------*/
 main#primary {

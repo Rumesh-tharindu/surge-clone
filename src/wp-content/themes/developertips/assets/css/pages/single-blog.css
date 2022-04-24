@@ -1,0 +1,31 @@
+.custom-post .author-info {
+    gap: 1.5rem;
+}
+.author {
+    display: flex;
+    align-items: center;
+}
+.wp-post-author-shortcode {
+    border: none;
+    padding: 1rem 0;
+}
+.wp-post-author {
+    display: flex;
+    
+}
+.awpa-img.awpa-author-block {
+    width: auto;
+}
+.wp-post-author-meta.awpa-author-block {
+    width: auto;
+}
+.awpa-img img, .awpa-img .photo {
+  width: 100px;
+  border-radius: 100%;
+}
+h4.awpa-display-name a{
+    font-family: var(--font-primary-bold);
+}
+.wp-post-author-shortcode.left {
+    margin-top: 2rem;
+}

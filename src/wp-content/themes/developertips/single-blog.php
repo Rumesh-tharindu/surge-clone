@@ -19,6 +19,7 @@ get_header();
        </div>
        <div class="article-meta">
             <div class="author-info">
+                <div class="author">
                 <div class="author-profile">
                 <?php 
                 echo get_avatar(get_the_author_meta( 'ID', $post->post_author ),50);
@@ -27,8 +28,10 @@ get_header();
                 <div class="auther-name">
                     <p> by <span><?php echo  get_the_author_meta( 'display_name', $post->post_author ); ?></span></p>
                 </div>
+                </div>
+           
                 <div class="publication-date">
-                    <p>Updated - <?php echo  get_the_date(); ?></p>
+                    <p><i class="fas fa-calendar"></i> <?php echo  get_the_date(); ?></p>
                 </div>
                 </div>
        </div>
@@ -58,6 +61,8 @@ get_header();
             <?php echo do_shortcode('[sharethis-inline-buttons]') ?>
             </div>
                
+
+           
             </div>
        
         
