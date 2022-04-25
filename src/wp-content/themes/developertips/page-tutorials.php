@@ -96,8 +96,11 @@
  
   <div class="dt-card">
     <a href="<?php the_permalink(); ?>">
-    <div class="dt-card__header">
+                    <div class="dt-card__header">
 					<?php echo  the_post_thumbnail(); ?>
+						<div class="play-btn">
+							<img src="<?php echo get_template_directory_uri() ?>/assets/images/icons/play-icon.svg" alt="">
+						</div>
 					</div>
 					<div class="dt-card__footer">
 						

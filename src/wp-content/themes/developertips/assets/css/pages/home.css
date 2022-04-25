@@ -188,6 +188,7 @@
 .author-info {
     display: flex;
     align-items: center;
+    
 }
 .author-profile {
     margin-right: 1.5rem;
@@ -202,7 +203,7 @@
 }
 
 .publication-date {
-    margin-left: 1.5rem;
+    margin-left: 1.2rem;
 }
 .publication-meta {
     padding: 1rem 0;
@@ -297,9 +298,7 @@ dt-bottom__meta .author-profile {
     font-weight: bold;
     text-transform: CAPITALIZE;
 }
-.featured-youtube .publication-date {
-    margin-left: 0;
-}
+
 .play-btn {
     position: absolute;
     inset: 0;

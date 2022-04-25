@@ -3,6 +3,9 @@
 function dk_register_style(){
     wp_register_style('owl',get_template_directory_uri().'/assets/css/vendor/owl.carousel.min.css',[],filemtime(get_template_directory().'/assets/css/vendor/owl.carousel.min.css'),false,'all');
     wp_enqueue_style('owl');
+
+    wp_register_style('mg-popup','https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css');
+    wp_enqueue_style('mg-popup');
  
     wp_register_style('layouts',get_template_directory_uri().'/assets/css/layouts.css',[],filemtime(get_template_directory().'/assets/css/layouts.css'),false,'all');
     wp_enqueue_style('layouts');

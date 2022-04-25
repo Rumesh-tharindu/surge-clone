@@ -9,6 +9,9 @@ header#masthead {
 .single-blog header#masthead{
     background-color: var(--secondary);
 }
+.single-youtube header#masthead{
+    background-color: var(--secondary);
+}
 .site-header.fixed{
     position: fixed;
     width: 100%;
@@ -149,7 +152,7 @@ footer .form-title {
     margin-bottom: 5rem;
 }
 .form-wrapper {
-    width: 60%;
+    width: 35%;
     display: flex;
     margin: 0 auto 2rem auto;
     flex-direction: column;

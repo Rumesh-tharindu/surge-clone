@@ -21,7 +21,7 @@ function custom_post_type_youtube() {
         'label'               => __( 'youtube', 'text_domain' ),
         'description'         => __( 'Post Type Description', 'text_domain' ),
         'labels'              => $labels,
-        'supports'            => array('title', 'editor', 'thumbnail', 'excerpt'),
+        'supports'            => array('title', 'editor', 'thumbnail', 'excerpt','comments','revisions'),
         'show_in_rest' => true,
         'taxonomies'          => array( 'category', 'post_tag' ),
         'hierarchical'        => false,

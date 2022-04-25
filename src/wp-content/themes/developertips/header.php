@@ -30,7 +30,8 @@
 	  <div class="container">
 		  <div class="header-inner">
 			  <div class="header-left">
-                 <div class="logo">
+				  <a href="/">
+				  <div class="logo">
 					<svg width="248" height="48" viewBox="0 0 248 58" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<rect opacity="0.9" width="248" height="58" fill="url(#pattern0)"/>
 						<defs>
@@ -42,6 +43,8 @@
 					</svg>
 
 				 </div>
+				  </a>
+               
 						<div class="menu-btn__wrapper">
 					<h4>
 						Menu
