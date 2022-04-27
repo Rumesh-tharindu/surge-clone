@@ -21,7 +21,12 @@ if ( post_password_required() ) {
 ?>
 
 <div id="comments" class="comments-area">
-
+    
+	 <div class="comment-count-wrapper">
+		 <h3 class="comment-count">
+              Comments (<?php echo get_comments_number( ) ?>)
+		 </h3>
+	 </div>
 	<?php
 	// You can start editing here -- including this comment!
 	if ( have_comments() ) :

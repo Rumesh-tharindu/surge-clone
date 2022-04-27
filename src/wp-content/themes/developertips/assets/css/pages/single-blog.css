@@ -63,8 +63,8 @@ div#respond {
 }
 .comment-body{
    padding: 2rem;
-   background: #cccccc4d;
    margin-bottom: 1rem;
+   border-bottom: 1px solid #cccccc4d;
 }
 .comment-author.vcard {
     display: flex;
@@ -73,7 +73,7 @@ div#respond {
     margin-bottom: 1rem;
 }
 ul.children {
-    margin-left: 1rem;
+    margin-left: 3rem;
 }
 textarea#comment {
     width: 100%;
@@ -103,4 +103,12 @@ p.comment-form-cookies-consent {
     display: flex;
     gap: 1rem;
     align-items: center;
+}
+.reply {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: 1px solid var(--theme-yellow);
+    color: var(--theme-yellow);
+    font-family: var(--font-primary-light);
 }

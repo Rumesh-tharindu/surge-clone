@@ -18,6 +18,13 @@ function dk_register_style(){
     
     wp_register_style('single-blog',get_template_directory_uri().'/assets/css/pages/single-blog.css',[],filemtime(get_template_directory().'/assets/css/pages/single-blog.css'),false,'all');
     wp_enqueue_style('single-blog');
+
+    wp_register_style('about-us',get_template_directory_uri().'/assets/css/pages/about-us.css',[],filemtime(get_template_directory().'/assets/css/pages/about-us.css'),false,'all');
+    wp_enqueue_style('about-us');
+
+    wp_register_style('contact',get_template_directory_uri().'/assets/css/pages/contact.css',[],filemtime(get_template_directory().'/assets/css/pages/contact.css'),false,'all');
+    wp_enqueue_style('contact');
+    
     
 
 }

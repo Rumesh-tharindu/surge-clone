@@ -1,0 +1,32 @@
+.page-banner.about{
+ background-image: url('/wp-content/uploads/2022/04/Banner.png');
+ position: relative;
+}
+.about-title-wrapper {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.about-title h1{
+    font-size: 4rem;
+}
+.about-title h1 span {
+    color: var(--secondary);
+    font-family: var(--font-secondary-bold);
+}
+.site-details-banner {
+    display: flex;
+    justify-content: center;
+}
+.site-details-banner img{
+    border: 4px solid var(--theme-yellow);
+}
+.site-details-content {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 4rem;
+    text-align: center;
+}

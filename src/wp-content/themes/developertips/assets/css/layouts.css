@@ -106,6 +106,7 @@ body {
   color: var(--primary);
   font-family: var(--font-secondary);
   font-weight: normal;
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
