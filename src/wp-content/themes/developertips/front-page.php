@@ -18,7 +18,7 @@ get_header();
 	
 	<!-- section page hero -->
      <section class="page-hero section-padding-top section-padding-bottom">
-
+         <div class="background-skew"></div>
 	    <div class="container">
 			<div class="page-hero__wrapper">
 			<div class="page-hero__left">
@@ -42,9 +42,7 @@ get_header();
 		</div>
 
 	  <div class="bottom-triangle">
-	  <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1370.65 335.02">
-		  <polygon points="4.15 334.52 1370.15 0.64 1370.15 334.52 4.15 334.52"/>
-		</svg>
+	
 	  </div>
 	 </section>
 	 <!-- End section page hero -->
@@ -71,7 +69,7 @@ get_header();
 			   </div>
 			   <div class="yt-info_right">
 				     <div class="yt-info_right__img">
-						 <img src="/wp-content/uploads/2022/02/YouTubeThumbnailMaker10.jpg" alt="">
+						 <img src="/wp-content/uploads/2022/04/photo-1611162616475-46b635cb6868.jpg" alt="">
 					 </div>
 				   </div>
 		   </div>
@@ -95,11 +93,6 @@ get_header();
 				   </div>
 			   </div>
 			   </div>
-			  
-			   
-		   </div>
-
-		   
 		 </section>
 	   <!-- End learn slider -->
    

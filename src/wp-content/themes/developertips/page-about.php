@@ -26,19 +26,29 @@
         </div>
 </section>
 
-<section class=" section-padding-bottom">
+<section class="my-profile section-padding-bottom">
     <div class="container">
-        <div class="site-details">
+        <div class="dt-row">
+            <div class="dt-column">
+            <div class="site-details">
              <div class="site-details-banner">
                  <img src="/wp-content/uploads/2022/04/about.png" alt="">
              </div>
 
-             <div class="site-details-content">
+             
+        </div>
+            </div>
+
+            <div class="dt-column">
+            <div class="site-details-content">
+                <h3>What Developer Tips Do</h3>
                  <p>
                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
                  </p>
              </div>
+                </div>
         </div>
+      
     </div>
 </section>
 

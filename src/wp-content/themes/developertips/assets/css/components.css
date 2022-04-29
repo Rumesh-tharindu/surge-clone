@@ -129,6 +129,16 @@ span.hamberger-icon {
         }
 }
 
+@media(max-width:560px){
+    .logo svg { 
+        width: 200px;
+    }
+}
+@media(max-width:360px){
+    .logo svg { 
+        width: 150px;
+    }
+}
 /* End header  */
 
 /* headings */
@@ -190,6 +200,22 @@ footer .footer-nav ul li a:hover{
 }
 footer .footer-bottom {
     text-align: center;
+}
+
+@media(max-width:920px){
+    .form-wrapper {
+        width: 70%;
+    }
+}
+@media(max-width:420px){
+    .form-wrapper {
+        width: 100%;
+    }
+    footer .footer-nav {
+      
+        max-width: 100%;
+        
+    }
 }
 /* End footer */
 
@@ -302,4 +328,12 @@ nav.pagination .page-numbers{
     color: var(--secondary);
 }
 
+
+@media(max-width:850px){
+    .section-headers {
+        max-width: 100%;
+        
+    }
+    
+}
 /* End section component */

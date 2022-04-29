@@ -82,6 +82,7 @@
     --theme-yellow:#FEBA33;
     --black:#000;
     --white:#fff;
+    --danger: #dc3232;
     --box-shadow-color: rgb(0 0 0 / 10%);
    
    
@@ -142,7 +143,14 @@ h2 { font-size: 2.5em; }
 h3 { font-size: 1.6em; margin-bottom: 1.5rem; }
 h4 { font-size: 1.2em; font-weight: normal;}
 h5 { font-size: .7em;  font-weight: normal;}
-p { margin: 0; letter-spacing: .4px; line-height: 1.6; margin-bottom: 1.5rem; font-family: var(--font-primary-light); font-weight: 300;}
+p { 
+  margin: 0; 
+  letter-spacing: .4px; 
+  line-height: 1.6; margin-bottom: 1.5rem; 
+  font-family: var(--font-primary-light); 
+  font-weight: 300;
+  font-size: 1rem;
+}
 p:last-child {
   margin-bottom: 0;
 }
@@ -211,6 +219,20 @@ i{
   margin-right: .5rem;
 }
 
+@media(max-width:1400px){
+  h1 { font-size: 2.5em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.6em; margin-bottom: 1.5rem; }
+h4 { font-size: 1.2em; font-weight: normal;}
+h5 { font-size: .7em;  font-weight: normal;}
+p { 
+  margin: 0; 
+  letter-spacing: .4px; 
+  line-height: 1.6; margin-bottom: 1.5rem; 
+  font-weight: 300;
+  font-size: 1rem;
+}
+}
 /*------- layout ------------------*/
 main#primary {
   position: relative;
@@ -262,6 +284,10 @@ section {
 .dt-column{
   width: 50%;
 }
+
+@media (max-width:560px){
+
+}
 /*------- End layout ------------------*/
 
 
@@ -297,8 +323,8 @@ section {
     padding-right: 1rem;
   }
 
-	.section-padding-top { padding-top: 8rem; }
-	.section-padding-bottom { padding-bottom: 8rem; }
+	.section-padding-top { padding-top: 6rem; }
+	.section-padding-bottom { padding-bottom: 6rem; }
 
   .section-padding-large-top { padding-top: 10rem; }
   .section-padding-large-bottom { padding-bottom: 10rem; }

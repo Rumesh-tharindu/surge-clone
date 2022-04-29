@@ -22,11 +22,41 @@
     justify-content: center;
 }
 .site-details-banner img{
-    border: 4px solid var(--theme-yellow);
+    width: 100%;
 }
+
 .site-details-content {
-    max-width: 1000px;
-    margin: auto;
-    margin-top: 4rem;
-    text-align: center;
+  
+}
+
+.my-profile .dt-row{
+ gap: 3rem;
+}
+
+@media(max-width:850px){
+    .about-title-wrapper {
+        width: 100%;
+        
+    }
+}
+@media(max-width:768px){
+    .my-profile .dt-row {
+        gap: 3rem;
+        flex-direction: column;
+    }
+    .my-profile .dt-column {
+        width: 100%;
+    }
+}
+@media(max-width:560px){
+    .about-title h1 {
+        font-size: 3rem;
+    }
+    
+}
+@media(max-width:420px){
+    .about-title h1 {
+        font-size: 2.5rem;
+    }
+    
 }
