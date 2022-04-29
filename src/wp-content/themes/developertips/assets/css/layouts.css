@@ -221,10 +221,10 @@ i{
 
 @media(max-width:1400px){
   h1 { font-size: 2.5em; }
-h2 { font-size: 2em; }
-h3 { font-size: 1.6em; margin-bottom: 1.5rem; }
-h4 { font-size: 1.2em; font-weight: normal;}
-h5 { font-size: .7em;  font-weight: normal;}
+h2 { font-size: 2rem; }
+h3 { font-size: 1.r6em; margin-bottom: 1.5rem; }
+h4 { font-size: 1.2rem; font-weight: normal;}
+h5 { font-size: .7rem;  font-weight: normal;}
 p { 
   margin: 0; 
   letter-spacing: .4px; 
@@ -310,10 +310,10 @@ section {
 		font-size: 15px;
 	}
 
-	h1 { font-size: 2.5em; }
-	h3 { font-size: 1.5em;}
-	h4 { font-size: 1em; }
-  h5 { font-size: .6em; }
+	h1 { font-size: 2.5rem; }
+	h3 { font-size: 1.5rem;}
+	h4 { font-size: 1rem; }
+  h5 { font-size: .6rem; }
 
 
 	/*------- layout ------------------*/
@@ -349,6 +349,13 @@ section {
   }
 
 }
+@media screen and (max-width: 420px) {
+  h1 { font-size: 2rem; }
+	h3 { font-size: 1.5eem;}
+	h4 { font-size: 1eem; }
+  h5 { font-size: .6rem; }
+}
+
 
 
 

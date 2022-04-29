@@ -217,6 +217,15 @@ footer .footer-bottom {
         
     }
 }
+
+@media(max-width:280px){
+    footer .footer-nav ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+}
 /* End footer */
 
 /* page title */

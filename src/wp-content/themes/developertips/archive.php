@@ -52,7 +52,7 @@
 						   <?php echo get_avatar( get_the_author_meta( 'ID' ),40); ?>
 						   </div>
 						   <div class="auther-name">
-							   <p>Written by <span><?php echo  get_the_author_meta( 'display_name', $post->post_author ); ?></span></p>
+							   <p><span><?php echo  get_the_author_meta( 'display_name', $post->post_author ); ?></span></p>
 						   </div>
 						   <div class="publication-date">
                              <p><?php echo  get_the_date(); ?></p>

@@ -132,6 +132,18 @@
     }
    
 }
+
+@media (max-width:280px){
+    .form form {
+        display: flex;
+        flex-direction: column;
+    }  
+    .form form button {
+      
+        margin-left:0rem;
+    }
+
+}
 /* End section page hero */
 
 /* youtube info */
@@ -186,6 +198,7 @@
         padding: 2rem;
         
     }
+   
 }
 @media (max-width:360px){
     .yt-info {
@@ -325,6 +338,11 @@ margin-right: 1rem;
         width: 100%;
     }
 }
+@media(max-width:420px){
+    .lt-blog-right__content {
+        padding: 1rem;
+    }
+}
 /* End latest blog */
 
 
@@ -408,7 +426,22 @@ dt-bottom__meta .author-profile {
     }
 
 }
-   
+
+@media (max-width:420px){
+    .auther-name p{
+        font-size: .75rem;
+    }
+    .publication-date p{
+        font-size: .75rem;
+    }
+}
+
+@media (max-width:360px){
+    .dt-card__footer {
+        padding: 2rem 1rem;
+       
+    }
+}
 /* End fearured blog */
 
 /* featured youtube */
