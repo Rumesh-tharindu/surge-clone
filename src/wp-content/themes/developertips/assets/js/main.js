@@ -17,9 +17,17 @@ $(window).on('scroll', function(e){
 	
     if($(this).scrollTop()>10){
         $('.site-header').addClass('fixed')
+        $('#first-box').css('fill','transparent')
+        $('#first-text').css('fill','var(--black)')
+        $('#second-box').css('fill','var(--black)')
+        $('#second-text').css('fill','var(--theme-yellow)')
     }
     else{
         $('.site-header').removeClass('fixed')
+        $('#second-box').css('fill','transparent')
+        $('#second-text').css('fill','var(--black)')
+        $('#first-box').css('fill','var(--black)')
+        $('#first-text').css('fill','var(--theme-yellow)')
     }
 
 });

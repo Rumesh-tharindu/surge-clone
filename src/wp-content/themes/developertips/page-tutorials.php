@@ -48,12 +48,15 @@
                   
 				  <div class="lt-blog-bottom__meta">
 					  <div class="author-info">
-                           <div class="author-profile">
+						 <div class="author">
+						 <div class="author-profile">
 						   <?php echo get_avatar( get_the_author_meta( 'ID' ),40); ?>
 						   </div>
 						   <div class="auther-name">
 							   <p> <span><?php echo  get_the_author_meta( 'display_name', $post->post_author ); ?></span></p>
 						   </div>
+						 </div>
+                          
 						   <div class="publication-date">
                              <p><?php echo  get_the_date(); ?></p>
 						   </div>
@@ -121,12 +124,15 @@
                   
 				  <div class="dt-bottom__meta">
 					  <div class="author-info">
-                           <div class="author-profile">
+						  <div class="author">
+						  <div class="author-profile">
 						   <?php echo get_avatar( get_the_author_meta( 'ID' ),40); ?>
 						   </div>
 						   <div class="auther-name">
 							   <p> <span><?php echo  get_the_author_meta( 'display_name', $post->post_author ); ?></span></p>
 						   </div>
+						  </div>
+                          
 						   <div class="publication-date">
                              <p><?php echo  get_the_date(); ?></p>
 						   </div>

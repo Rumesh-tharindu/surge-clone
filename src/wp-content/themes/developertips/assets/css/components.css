@@ -26,6 +26,13 @@ header#masthead {
     display: flex;
     align-items: center;
 }
+.logo svg{
+    width: 180px;
+}
+.cls-1:first-child{
+    fill: black;
+   
+}
 .header-left {
     flex: 1;
     display: flex;
@@ -64,6 +71,7 @@ header#masthead {
     font-family: var(--font-primary-semibold);
     font-size: 1.2rem;
     margin-right: 1rem;
+    font-family: var(--font-primary-bold);
 }
 button.hamberger-btn {
     background: transparent;
@@ -76,6 +84,23 @@ button.hamberger-btn {
     width: 20px;
     height: 20px;
     justify-content: center;
+    transition: .3s;
+}
+button.hamberger-btn.active:hover{
+    transform: rotate(360deg);
+}
+button.hamberger-btn.active span.hamberger-icon:first-child{
+    transform: rotate(45deg);
+    position: relative;
+    top: 3px;
+}
+button.hamberger-btn.active span.hamberger-icon:nth-child(2){
+    transform: rotate(136deg);
+    position: relative;
+    top: -2px;
+}
+button.hamberger-btn.active span.hamberger-icon:last-child{
+    display: none;
 }
 span.hamberger-icon {
     width: 20px;
@@ -86,6 +111,16 @@ span.hamberger-icon {
     transition: all .1s ease;
 }
 
+@media(max-width:1400px){
+    .header-right nav ul li{
+        margin-right: 4rem;
+    }
+}
+@media(max-width:1000px){
+    .header-right nav ul li{
+        margin-right: 2rem;
+    }
+}
 @media(max-width:850px){
     .header-inner {
         display: block;
@@ -101,23 +136,19 @@ span.hamberger-icon {
     .header-right nav {
         width: 100%;
         display: flex;
-        position: absolute;
         z-index: 999;
         background: var(--theme-yellow);
-        top: 80px;
-        left: 0;
-        right: 0;
-        bottom: 0;
     }
     .header-right nav ul {
         display: flex;
         align-items: center;
         flex-direction: column;
         width: 100%;
+        margin-top: 4rem;
     }
     .header-right nav ul li {
         margin-right: 0rem;
-        padding: 2rem 0;
+        padding: 1rem 0;
     }
     .header-right {
         flex: 1;
@@ -126,6 +157,7 @@ span.hamberger-icon {
     }
     .header-right.toggle-nav{
         display: flex;
+        flex-direction: column;
         }
 }
 
@@ -137,6 +169,11 @@ span.hamberger-icon {
 @media(max-width:360px){
     .logo svg { 
         width: 150px;
+    }
+}
+@media(max-width:300px){
+    .logo svg { 
+        width: 120px;
     }
 }
 /* End header  */
@@ -346,3 +383,22 @@ nav.pagination .page-numbers{
     
 }
 /* End section component */
+
+/* social link */
+.social-links ul li a i{
+    font-size: 2rem;
+}
+.social-links {
+    margin-top: 3rem;
+    padding: 0 2rem;
+}
+.social-links ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(min-width:850px){
+    .social-links{
+        display: none;
+    }  
+}

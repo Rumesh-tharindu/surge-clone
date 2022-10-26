@@ -1,7 +1,9 @@
 <?php  get_header() ?>
 
 <div class="page-banner about">
- 
+<?php
+		the_content();
+		?>
       <div class="about-title-wrapper">
           <div class="about-title">
           <h1>The Story Of <span>Developer TIPS !</span> </h1>
