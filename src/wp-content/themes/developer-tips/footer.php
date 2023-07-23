@@ -13,9 +13,42 @@
 ?>
 </main><!-- #main -->
 <!-- footer -->
-<footer>
+<footer class="footer section-top">
+    <div class="container">
+        <div class="subscriptionForm">
+            <h3 class="formTitle">
+                Subscribe to our newsletter
+            </h3>
+
+            <div class="form">
+                <form action="">
+                    <input type="text" placeholder="Enter Email" require>
+                    <button>Submit</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="navigation">
+            <ul>
+                <?php
+                wp_nav_menu(
+                    array(
+                        'container'  => '',
+                        'items_wrap' => '%3$s',
+                        'theme_location' => 'primary',
+                    )
+                );
+
+                ?>
+            </ul>
+        </div>
+
+    </div>
+    <div class="footerBottom">
+        <p>Copyright © 2023 DeveloperTips. All rights reserved.</p>
+    </div>
 </footer>
-<!-- footer -->
+
 
 <?php wp_footer(); ?>
 

@@ -1,1 +1,10 @@
-@import "components/header.scss";
+// components style
+
+@import 'components/header.scss';
+@import 'components/footer.scss';
+@import 'components/fullwidthCard.scss';
+@import 'components/cards.scss';
+
+// pages style
+@import 'pages/home.scss';
+@import 'pages/contact.scss';

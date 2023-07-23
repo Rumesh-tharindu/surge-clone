@@ -1,0 +1,69 @@
+.footer {
+	@apply bg-black-200;
+
+	.subscriptionForm {
+		@apply max-w-[620px] mx-auto;
+
+		.formTitle {
+			@apply text-white uppercase text-center text-[20px] mb-12 font-medium;
+		}
+	}
+
+	.form {
+		@apply w-full;
+
+		form {
+			@apply w-full flex;
+
+			input {
+				@apply flex-1 p-4 border-0 text-gray-700 outline-none uppercase italic text-sm;
+			}
+
+			button {
+				@apply bg-yellow text-white p-4 ml-2 uppercase;
+			}
+		}
+	}
+
+	.navigation {
+		@apply pt-16 w-[80%] mx-auto;
+		ul {
+			@apply pl-0 flex justify-between flex-wrap;
+		}
+
+		ul li a {
+			@apply text-gray-400 uppercase p-4;
+		}
+	}
+
+	.footerBottom {
+		@apply bg-white py-4 text-center text-gray-500;
+		p {
+			@apply mb-0;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.footer {
+		.navigation {
+			@apply w-full pt-8;
+		}
+	}
+}
+@media (max-width: 360px) {
+	.footer {
+		.form {
+			form {
+				@apply flex-col;
+
+				button {
+					@apply ml-0;
+				}
+			}
+		}
+		.footerBottom p {
+			@apply text-[12px];
+		}
+	}
+}

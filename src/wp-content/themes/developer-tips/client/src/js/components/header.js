@@ -1,7 +1,8 @@
-import $ from "jquery";
+import $ from 'jquery';
 
 export default () => {
-  $("#my-btn").on("click", function () {
-    console.log("hi");
-  });
+	$('.hamburgerBtn').on('click', function () {
+		$(this).toggleClass('active');
+		$('.navigation').toggleClass('active');
+	});
 };
