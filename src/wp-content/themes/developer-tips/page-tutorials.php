@@ -29,14 +29,15 @@ get_header();
                     'orderby' => 'post_date',
                     'order' => 'DESC',
                     'post_type' => 'youtube',
-                    'post_status' => 'publish'
+                    'post_status' => 'publish',
+
                 ));
                 ?>
 
                 <?php if ($the_query->have_posts()) : ?>
                     <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                         <div class="CardThumbnail">
-                            <a href="">
+                            <a href="<?php echo get_permalink() ?>">
                                 <?php echo  the_post_thumbnail('large'); ?>
                             </a>
                         </div>
@@ -97,7 +98,7 @@ get_header();
                 'order' => 'DESC',
                 'paged' => $paged,
                 'post_type' => 'youtube',
-                'post_status' => 'publish'
+                'posts_per_page' => 6
             ));
             ?>
 
@@ -106,8 +107,8 @@ get_header();
                     <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                         <div class="card">
                             <div class="cardInner">
-                                <div class="cardHeader">
-                                    <?php echo  the_post_thumbnail(); ?>
+                                <div class="cardHeader" style="background-image:url(<?php echo  the_post_thumbnail_url(); ?>)">
+
                                 </div>
                                 <div class="cardFooter">
                                     <div class="publicationMeta">

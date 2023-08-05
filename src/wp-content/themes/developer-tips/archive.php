@@ -37,7 +37,7 @@ get_header();
         <?php if ($the_query->have_posts()) : ?>
           <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
             <div class="CardThumbnail">
-              <a href="">
+              <a href="<?php echo get_permalink() ?>">
                 <?php echo  the_post_thumbnail('large'); ?>
               </a>
             </div>

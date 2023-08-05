@@ -1,0 +1,33 @@
+.singlePost {
+	.articleHeaderContent {
+		@apply max-w-[1200px] mx-auto pt-16 text-white;
+	}
+	.articleTitle {
+		@apply text-center mb-12;
+	}
+	.articleMeta {
+		@apply flex justify-center mb-12;
+
+		.authorInfo {
+			@apply flex gap-12 items-center;
+		}
+
+		.author {
+			@apply flex gap-4 items-center;
+
+			p {
+				@apply mb-0;
+			}
+		}
+
+		.authorProfile img {
+			@apply rounded-full;
+		}
+
+		.publicationDate {
+			p {
+				@apply mb-0;
+			}
+		}
+	}
+}

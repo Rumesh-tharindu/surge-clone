@@ -458,6 +458,11 @@
   }
 }
 @media (max-width: 360px) {
+  .cards .cardHeader {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   .cards .bottomMeta .authorName p {
     font-size: 0.75rem;
   }
@@ -486,6 +491,27 @@
 .pageBanner .bannerTitle h1 span {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.pagination {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.pagination .page-numbers {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 186 51 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.pagination .page-numbers.current {
+  font-weight: 700;
 }
 
 .PageHome .homeHero {
@@ -793,4 +819,40 @@
     margin-bottom: 2rem;
     width: 100%;
   }
+}
+.singlePost .articleHeaderContent {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75rem;
+  padding-top: 4rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.singlePost .articleTitle {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.singlePost .articleMeta {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.singlePost .articleMeta .authorInfo {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.singlePost .articleMeta .author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.singlePost .articleMeta .author p {
+  margin-bottom: 0;
+}
+.singlePost .articleMeta .authorProfile img {
+  border-radius: 624.9375rem;
+}
+.singlePost .articleMeta .publicationDate p {
+  margin-bottom: 0;
 }
