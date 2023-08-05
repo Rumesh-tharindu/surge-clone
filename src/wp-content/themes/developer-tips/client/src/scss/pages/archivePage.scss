@@ -1,0 +1,9 @@
+.archivePage {
+	.section-title {
+		@apply relative inline-block;
+		&::after {
+			content: '';
+			@apply absolute w-full h-[5px] bg-gradient-to-r from-primary to-yellow -bottom-0 left-0;
+		}
+	}
+}

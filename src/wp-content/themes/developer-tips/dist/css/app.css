@@ -856,3 +856,23 @@
 .singlePost .articleMeta .publicationDate p {
   margin-bottom: 0;
 }
+
+.archivePage .section-title {
+  position: relative;
+  display: inline-block;
+}
+.archivePage .section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -0;
+  left: 0;
+  height: 0.3125rem;
+  width: 100%;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #000 var(--tw-gradient-from-position);
+  --tw-gradient-from-position:  ;
+  --tw-gradient-to: rgb(0 0 0 / 0)  var(--tw-gradient-from-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #FEBA33 var(--tw-gradient-to-position);
+  --tw-gradient-to-position:  ;
+}

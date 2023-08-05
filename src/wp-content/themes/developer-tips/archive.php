@@ -16,10 +16,10 @@
 get_header();
 ?>
 
-<div class="blogArchivePage">
+<div class="archivePage blogArchivePage">
   <section class="blogLatesPost section-top section-bottom">
     <div class="container">
-      <div class="section-title">BLOG</div>
+      <h1 class="section-title">BLOG</h1>
 
       <div class="fullWidthCard">
 
