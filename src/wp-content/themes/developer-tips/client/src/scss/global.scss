@@ -105,6 +105,7 @@ h1 {
 
 h1 {
 	font-size: 60px;
+	line-height: 64px;
 }
 @screen lg {
 	h1 {
@@ -126,6 +127,7 @@ h1 {
 
 h2 {
 	font-size: 48px;
+	line-height: 52px;
 }
 @screen lg {
 	h2 {
@@ -139,49 +141,57 @@ h2 {
 		line-height: 54px;
 	}
 }
-@media sm {
+@screen sm {
 	h2 {
 		font-size: 32px;
 	}
 }
 
 h3 {
-	font-size: 28px;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+@media (max-width: 1280px) {
+	h3 {
+		font-size: 20px;
+		line-height: 30px;
+	}
 }
 @screen lg {
 	h3 {
+		font-size: 18px;
+		line-height: 30px;
+	}
+}
+
+// h4
+
+h4 {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+@screen lg {
+	h4 {
 		font-size: 24px;
 		line-height: 30px;
 	}
 }
 @media md {
-	h3 {
+	h4 {
 		font-size: 35px;
 		line-height: 54px;
 	}
 }
 @media sm {
-	h3 {
+	h4 {
 		font-size: 30px;
 	}
 }
 
 p {
 	@apply text-base font-primary leading-[24px] mb-4;
-}
-abbr[title],
-abbr[data-bs-original-title] {
-	-webkit-text-decoration: underline dotted;
-	text-decoration: underline dotted;
-	cursor: help;
-	-webkit-text-decoration-skip-ink: none;
-	text-decoration-skip-ink: none;
-}
-
-address {
-	margin-bottom: 1rem;
-	font-style: normal;
-	line-height: inherit;
 }
 
 ol,
@@ -212,22 +222,6 @@ dd {
 	margin-left: 0;
 }
 
-blockquote {
-	margin: 0 0 1rem;
-}
-
-table {
-	caption-side: bottom;
-	border-collapse: collapse;
-}
-
-caption {
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-	color: #6c757d;
-	text-align: left;
-}
-
 th {
 	text-align: inherit;
 	text-align: -webkit-match-parent;
@@ -239,13 +233,4 @@ label {
 
 button {
 	border-radius: 0;
-}
-
-button:focus:not(:focus-visible) {
-	outline: 0;
-}
-
-button,
-select {
-	text-transform: none;
 }

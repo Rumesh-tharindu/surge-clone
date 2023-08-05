@@ -1,0 +1,29 @@
+.aboutPage {
+	.pageBanner {
+		background-image: url('/wp-content/uploads/2022/04/Banner.png');
+	}
+
+	.myProfile {
+		.row {
+			@apply flex -mx-8;
+		}
+
+		.column {
+			@apply w-1/2 px-8;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.aboutPage {
+		.myProfile {
+			.row {
+				@apply flex-col;
+			}
+
+			.column {
+				@apply w-full mb-8;
+			}
+		}
+	}
+}

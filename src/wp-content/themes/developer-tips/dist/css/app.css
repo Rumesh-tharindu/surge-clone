@@ -372,13 +372,26 @@
   padding-right: 1rem;
 }
 .cards .cardInner {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
   box-shadow: 0 0 2.5rem 0 rgba(0, 0, 0, 0.1);
 }
 .cards .cardHeader {
   display: flex;
-  min-height: 18.75rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cards .cardHeader::after {
+  content: "";
+  display: block;
+  padding-top: 65%;
 }
 .cards .cardFooter {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
   padding: 1rem;
 }
 .cards .bottomMeta .authorInfo {
@@ -393,6 +406,86 @@
 }
 .cards .bottomMeta .authorProfile img {
   border-radius: 624.9375rem;
+}
+.cards .content {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 1280px) {
+  .cards .bottomMeta .authorName p {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .cards .bottomMeta .author {
+    gap: 0.5rem;
+  }
+  .cards .bottomMeta .publicationDate p {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+@media (max-width: 1100px) {
+  .cards .bottomMeta .authorProfile {
+    width: 1.875rem;
+  }
+  .cards .bottomMeta .authorName p {
+    font-size: 0.75rem;
+  }
+  .cards .bottomMeta .publicationDate p {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 1024px) {
+  .cards .card {
+    width: 50%;
+  }
+  .cards .bottomMeta .authorProfile {
+    width: 1.875rem;
+  }
+  .cards .bottomMeta .authorName p {
+    font-size: 0.875rem;
+  }
+  .cards .bottomMeta .publicationDate p {
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 768px) {
+  .cards .card {
+    width: 100%;
+  }
+}
+@media (max-width: 360px) {
+  .cards .bottomMeta .authorName p {
+    font-size: 0.75rem;
+  }
+  .cards .bottomMeta .publicationDate p {
+    font-size: 0.75rem;
+  }
+}
+.pageBanner {
+  position: relative;
+  display: flex;
+  min-height: 60vh;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.pageBanner .bannerTitle {
+  text-align: center;
+}
+.pageBanner .bannerTitle h1 {
+  text-transform: uppercase;
+}
+.pageBanner .bannerTitle h1 span {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .PageHome .homeHero {
@@ -608,6 +701,7 @@
 .pageAbout .contactForm .form-column .form-row input[type=email],
 .pageAbout .contactForm .form-column .form-row input[type=tel] {
   width: 100%;
+  outline: none;
   background: transparent;
   border: none;
   border-bottom: 0.0625rem solid #fff;
@@ -632,6 +726,7 @@
   padding: 2rem 1rem;
   color: var(--secondary);
   font-size: 1rem;
+  outline: none;
 }
 .pageAbout .contactForm form textarea::-moz-placeholder {
   --tw-text-opacity: 1;
@@ -656,4 +751,46 @@
   text-transform: uppercase;
   --tw-text-opacity: 1;
   color: rgb(254 186 51 / var(--tw-text-opacity));
+}
+
+@media (max-width: 768px) {
+  .pageAbout .sectionHeaders {
+    max-width: 100%;
+  }
+  .pageAbout .contactForm .form-column .form-row {
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .pageAbout .contactForm .form-column {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+@media (max-width: 520px) {
+  .pageAbout .contactForm form {
+    width: 100%;
+  }
+}
+.aboutPage .pageBanner {
+  background-image: url("/wp-content/uploads/2022/04/Banner.png");
+}
+.aboutPage .myProfile .row {
+  margin-left: -2rem;
+  margin-right: -2rem;
+  display: flex;
+}
+.aboutPage .myProfile .column {
+  width: 50%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (max-width: 768px) {
+  .aboutPage .myProfile .row {
+    flex-direction: column;
+  }
+  .aboutPage .myProfile .column {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
 }

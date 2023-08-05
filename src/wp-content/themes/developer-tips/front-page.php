@@ -160,21 +160,26 @@ get_header();
           <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
             <div class="card">
               <div class="cardInner">
-                <div class="cardHeader">
-                  <?php echo  the_post_thumbnail(); ?>
+                <div class="cardHeader" style="background-image: url( <?php echo  get_the_post_thumbnail_url(); ?>);">
+
+
                 </div>
                 <div class="cardFooter">
-                  <div class="publicationMeta">
-                    <?php
-                    $postTags = get_the_tags();
-                    if ($postTags) {
-                      foreach ($postTags as $tag) {
-                        echo '<a href="' . get_tag_link($tag->term_id) . '">' . $tag->name . '</a>';
+                  <div class="cardFooterTop">
+                    <div class="publicationMeta">
+                      <?php
+                      $postTags = get_the_tags();
+                      if ($postTags) {
+                        foreach ($postTags as $tag) {
+                          echo '<a href="' . get_tag_link($tag->term_id) . '">' . $tag->name . '</a>';
+                        }
                       }
-                    }
-                    ?>
+                      ?>
+                    </div>
+                    <h3> <?php the_title(); ?></h3>
                   </div>
-                  <h3> <?php the_title(); ?></h3>
+
+
 
                   <div class="content">
                     <?php the_excerpt(); ?>

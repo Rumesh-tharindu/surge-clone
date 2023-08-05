@@ -27,6 +27,7 @@
 		input[type='email'],
 		input[type='tel'] {
 			width: 100%;
+			outline: none;
 			background: transparent;
 			border: none;
 			border-bottom: 1px solid #fff;
@@ -47,6 +48,7 @@
 			padding: 2rem 1rem;
 			color: var(--secondary);
 			font-size: 1rem;
+			outline: none;
 
 			&::placeholder {
 				@apply text-white;
@@ -54,6 +56,28 @@
 		}
 		input[type='submit'] {
 			@apply text-yellow py-4 px-8 bg-black-200 font-primary font-medium uppercase border-0 text-sm;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.pageAbout {
+		.sectionHeaders {
+			@apply max-w-full;
+		}
+		.contactForm .form-column .form-row {
+			@apply w-full mb-0;
+		}
+		.contactForm .form-column {
+			@apply flex-col gap-0;
+		}
+	}
+}
+
+@media (max-width: 520px) {
+	.pageAbout {
+		.contactForm form {
+			@apply w-full;
 		}
 	}
 }
