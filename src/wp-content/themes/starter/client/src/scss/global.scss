@@ -1,0 +1,236 @@
+// Base
+// Includes styles that hardly change and don't require compiling as often
+
+// Tailwind imports
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'montserrat';
+	font-weight: 300;
+	src: url('../fonts/montserrat/Montserrat-Light.ttf') format('ttf');
+}
+@font-face {
+	font-family: 'montserrat';
+	font-weight: 400;
+	src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
+}
+@font-face {
+	font-family: 'montserrat';
+	font-weight: 500;
+	src: url('../fonts/montserrat/Montserrat-Medium.ttf');
+}
+
+@font-face {
+	font-family: 'montserrat';
+	font-weight: 600;
+	src: url('../fonts/montserrat/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+	font-family: 'montserrat';
+	font-weight: 700;
+	src: url('../fonts/Montserrat/Montserrat-Bold.ttf');
+}
+
+// poppins
+
+@font-face {
+	font-family: 'poppin';
+	font-weight: 300;
+	src: url('../fonts/Poppins/Poppins-Light.ttf');
+}
+
+@font-face {
+	font-family: 'poppins';
+	font-weight: 400;
+	src: url('../fonts/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'poppins';
+	font-weight: 500;
+	src: url('../fonts/Poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+	font-family: 'poppins';
+	font-weight: 600;
+	src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+	font-family: 'poppins';
+	font-weight: 700;
+	src: url('../fonts/Poppins/Poppins-Bold.ttf');
+}
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0;
+	@apply font-primary font-normal text-black-200;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 1rem;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+	@apply font-secondary font-bold;
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 60px;
+	line-height: 64px;
+}
+@screen lg {
+	h1 {
+		font-size: 45px;
+		line-height: 59px;
+	}
+}
+@media md {
+	h1 {
+		font-size: 40px;
+		line-height: 54px;
+	}
+}
+@media sm {
+	h1 {
+		font-size: 36px;
+	}
+}
+
+h2 {
+	font-size: 48px;
+	line-height: 52px;
+}
+@screen lg {
+	h2 {
+		font-size: 40px;
+		line-height: 59px;
+	}
+}
+@media md {
+	h2 {
+		font-size: 28px;
+		line-height: 54px;
+	}
+}
+@screen sm {
+	h2 {
+		font-size: 32px;
+	}
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 28px;
+}
+
+@media (max-width: 1280px) {
+	h3 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+@screen lg {
+	h3 {
+		font-size: 18px;
+		line-height: 30px;
+	}
+}
+
+// h4
+
+h4 {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+@screen lg {
+	h4 {
+		font-size: 24px;
+		line-height: 30px;
+	}
+}
+@media md {
+	h4 {
+		font-size: 35px;
+		line-height: 54px;
+	}
+}
+@media sm {
+	h4 {
+		font-size: 30px;
+	}
+}
+
+p {
+	@apply text-base font-primary leading-[24px] mb-4;
+}
+
+ol,
+ul {
+	padding-left: 2rem;
+}
+
+ol,
+ul,
+dl {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+	margin-bottom: 0;
+}
+
+dt {
+	font-weight: 700;
+}
+
+dd {
+	margin-bottom: 0.5rem;
+	margin-left: 0;
+}
+
+th {
+	text-align: inherit;
+	text-align: -webkit-match-parent;
+}
+
+label {
+	display: inline-block;
+}
+
+button {
+	border-radius: 0;
+}

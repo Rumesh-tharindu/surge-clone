@@ -1,0 +1,11 @@
+.pagination {
+	@apply mt-8 flex justify-center gap-4 flex-wrap;
+
+	.page-numbers {
+		@apply py-2 px-4 bg-yellow text-primary;
+
+		&.current {
+			@apply font-bold;
+		}
+	}
+}

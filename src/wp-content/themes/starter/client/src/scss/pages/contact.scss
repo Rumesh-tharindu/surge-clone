@@ -1,0 +1,83 @@
+.pageAbout {
+	@apply bg-yellowDark text-white;
+
+	.sectionHeaders {
+		h2 {
+			@apply uppercase;
+		}
+		@apply max-w-[50%] mx-auto text-center;
+	}
+
+	.contactForm form {
+		@apply w-[80%] my-16 mx-auto;
+		label {
+			@apply block;
+		}
+	}
+	.contactForm .form-column {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		gap: 3rem;
+	}
+	.contactForm .form-column .form-row {
+		width: 50%;
+		margin-bottom: 4rem;
+		input[type='text'],
+		input[type='email'],
+		input[type='tel'] {
+			width: 100%;
+			outline: none;
+			background: transparent;
+			border: none;
+			border-bottom: 1px solid #fff;
+			padding: 1rem;
+			margin-bottom: 1rem;
+
+			&::placeholder {
+				@apply text-white;
+			}
+		}
+	}
+	.contactForm form {
+		textarea {
+			background: hsla(0, 0%, 100%, 0.2);
+			border: 0;
+			border-bottom: 1px solid #fff;
+			width: 100%;
+			padding: 2rem 1rem;
+			color: var(--secondary);
+			font-size: 1rem;
+			outline: none;
+
+			&::placeholder {
+				@apply text-white;
+			}
+		}
+		input[type='submit'] {
+			@apply text-yellow py-4 px-8 bg-black-200 font-primary font-medium uppercase border-0 text-sm;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.pageAbout {
+		.sectionHeaders {
+			@apply max-w-full;
+		}
+		.contactForm .form-column .form-row {
+			@apply w-full mb-0;
+		}
+		.contactForm .form-column {
+			@apply flex-col gap-0;
+		}
+	}
+}
+
+@media (max-width: 520px) {
+	.pageAbout {
+		.contactForm form {
+			@apply w-full;
+		}
+	}
+}
