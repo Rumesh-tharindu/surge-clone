@@ -1,15 +1,8 @@
 // components style
 
-@import 'components/header.scss';
-@import 'components/footer.scss';
-@import 'components/fullwidthCard.scss';
-@import 'components/cards.scss';
-@import 'components/pageBanner.scss';
-@import 'components/pagination.scss';
+@import "components/header.scss";
+@import "components/footer.scss";
 
 // pages style
-@import 'pages/home.scss';
-@import 'pages/contact.scss';
-@import 'pages/about.scss';
-@import 'pages/singlePost.scss';
-@import 'pages/archivePage.scss';
+@import "pages/home/home.scss";
+@import "pages/contact/contact.scss";
