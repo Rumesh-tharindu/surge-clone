@@ -1,8 +1,4 @@
-// Base
-// Includes styles that hardly change and don't require compiling as often
-
-@import "~bootstrap/scss/bootstrap";
-
+// font
 @font-face {
   font-family: "Laxend";
   font-weight: 300;
@@ -31,7 +27,10 @@
   src: url("../fonts/Lexend/Lexend-Bold.ttf") format("ttf");
 }
 
-// font
+// Base
+// Includes styles that hardly change and don't require compiling as often
+
+@import "~bootstrap/scss/bootstrap";
 
 html {
   overflow-x: hidden;
