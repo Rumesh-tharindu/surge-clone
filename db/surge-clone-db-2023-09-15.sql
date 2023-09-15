@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Aug 19, 2023 at 05:07 PM
+-- Generation Time: Sep 15, 2023 at 10:35 AM
 -- Server version: 5.7.24
--- PHP Version: 7.4.16
+-- PHP Version: 8.0.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `starter-db`
+-- Database: `surge-clone-db`
 --
 
 -- --------------------------------------------------------
@@ -110,8 +110,8 @@ CREATE TABLE `wp_options` (
 --
 
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
-(1, 'siteurl', 'http://dev.starter.com/', 'yes'),
-(2, 'home', 'http://dev.starter.com/', 'yes'),
+(1, 'siteurl', 'http://dev.surge-clone.com', 'yes'),
+(2, 'home', 'http://dev.surge-clone.com', 'yes'),
 (3, 'blogname', 'starter', 'yes'),
 (4, 'blogdescription', '', 'yes'),
 (5, 'users_can_register', '0', 'yes'),

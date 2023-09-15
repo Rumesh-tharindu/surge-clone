@@ -12030,54 +12030,29 @@ textarea.form-control-lg {
   }
 }
 @font-face {
-  font-family: "montserrat";
+  font-family: "Laxend";
   font-weight: 300;
-  src: url("../fonts/montserrat/Montserrat-Light.ttf") format("ttf");
+  src: url("../fonts/Lexend/Lexend-Light.ttf") format("ttf");
 }
 @font-face {
-  font-family: "montserrat";
+  font-family: "Laxend-regular";
   font-weight: 400;
-  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+  src: url("../fonts/Lexend/Lexend-Regular.ttf") format("ttf");
 }
 @font-face {
-  font-family: "montserrat";
+  font-family: "Laxend-medium";
   font-weight: 500;
-  src: url("../fonts/montserrat/Montserrat-Medium.ttf");
+  src: url("../fonts/Lexend/Lexend-Medium.ttf") format("ttf");
 }
 @font-face {
-  font-family: "montserrat";
+  font-family: "Laxend-semibold";
   font-weight: 600;
-  src: url("../fonts/montserrat/Montserrat-SemiBold.ttf");
+  src: url("../fonts/Lexend/Lexend-SemiBold.ttf") format("ttf");
 }
 @font-face {
-  font-family: "montserrat";
+  font-family: "Laxend-bold";
   font-weight: 700;
-  src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
-}
-@font-face {
-  font-family: "poppin";
-  font-weight: 300;
-  src: url("../fonts/Poppins/Poppins-Light.ttf");
-}
-@font-face {
-  font-family: "poppins";
-  font-weight: 400;
-  src: url("../fonts/Poppins/Poppins-Regular.ttf");
-}
-@font-face {
-  font-family: "poppins";
-  font-weight: 500;
-  src: url("../fonts/Poppins/Poppins-Medium.ttf");
-}
-@font-face {
-  font-family: "poppins";
-  font-weight: 600;
-  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
-}
-@font-face {
-  font-family: "poppins";
-  font-weight: 700;
-  src: url("../fonts/Poppins/Poppins-Bold.ttf");
+  src: url("../fonts/Lexend/Lexend-Bold.ttf") format("ttf");
 }
 html {
   overflow-x: hidden;
@@ -12088,6 +12063,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+  font-family: "Laxend-regular";
 }
 
 li > ul,
@@ -12124,84 +12100,26 @@ h1, .h1 {
   line-height: 4rem;
 }
 
-@screen lg {
-  h1, .h1 {
-    font-size: 2.8125rem;
-    line-height: 3.6875rem;
-  }
-}
-@media md {
-  h1, .h1 {
-    font-size: 2.5rem;
-    line-height: 3.375rem;
-  }
-}
-@media sm {
-  h1, .h1 {
-    font-size: 2.25rem;
-  }
-}
 h2, .h2 {
   font-size: 3rem;
   line-height: 3.25rem;
 }
 
-@screen lg {
-  h2, .h2 {
-    font-size: 2.5rem;
-    line-height: 3.6875rem;
-  }
-}
-@media md {
-  h2, .h2 {
-    font-size: 1.75rem;
-    line-height: 3.375rem;
-  }
-}
-@screen sm {
-  h2, .h2 {
-    font-size: 2rem;
-  }
-}
 h3, .h3 {
   font-size: 1.5rem;
   line-height: 1.75rem;
 }
 
-@media (max-width: 1280px) {
-  h3, .h3 {
-    font-size: 1.25rem;
-    line-height: 1.875rem;
-  }
-}
-@screen lg {
-  h3, .h3 {
-    font-size: 1.125rem;
-    line-height: 1.875rem;
-  }
-}
 h4, .h4 {
   font-size: 1.125rem;
   line-height: 1.5rem;
 }
 
-@screen lg {
-  h4, .h4 {
-    font-size: 1.5rem;
-    line-height: 1.875rem;
-  }
+p {
+  font-family: "Laxend-regular";
+  font-size: 1rem;
 }
-@media md {
-  h4, .h4 {
-    font-size: 2.1875rem;
-    line-height: 3.375rem;
-  }
-}
-@media sm {
-  h4, .h4 {
-    font-size: 1.875rem;
-  }
-}
+
 ol,
 ul {
   padding-left: 2rem;

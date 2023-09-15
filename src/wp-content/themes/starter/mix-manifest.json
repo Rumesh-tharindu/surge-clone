@@ -1,9 +1,17 @@
 {
     "/dist/js/app.min.js": "/dist/js/app.min.js",
-    "/dist/css/app.css": "/dist/css/app.css",
     "/dist/css/global.css": "/dist/css/global.css",
     "/dist/css/base.css": "/dist/css/base.css",
     "/dist/images/logo.svg": "/dist/images/logo.svg",
+    "/dist/fonts/Lexend/Lexend-Black.ttf": "/dist/fonts/Lexend/Lexend-Black.ttf",
+    "/dist/fonts/Lexend/Lexend-Bold.ttf": "/dist/fonts/Lexend/Lexend-Bold.ttf",
+    "/dist/fonts/Lexend/Lexend-ExtraBold.ttf": "/dist/fonts/Lexend/Lexend-ExtraBold.ttf",
+    "/dist/fonts/Lexend/Lexend-ExtraLight.ttf": "/dist/fonts/Lexend/Lexend-ExtraLight.ttf",
+    "/dist/fonts/Lexend/Lexend-Light.ttf": "/dist/fonts/Lexend/Lexend-Light.ttf",
+    "/dist/fonts/Lexend/Lexend-Medium.ttf": "/dist/fonts/Lexend/Lexend-Medium.ttf",
+    "/dist/fonts/Lexend/Lexend-Regular.ttf": "/dist/fonts/Lexend/Lexend-Regular.ttf",
+    "/dist/fonts/Lexend/Lexend-SemiBold.ttf": "/dist/fonts/Lexend/Lexend-SemiBold.ttf",
+    "/dist/fonts/Lexend/Lexend-Thin.ttf": "/dist/fonts/Lexend/Lexend-Thin.ttf",
     "/dist/fonts/Montserrat/Montserrat-Black.ttf": "/dist/fonts/Montserrat/Montserrat-Black.ttf",
     "/dist/fonts/Montserrat/Montserrat-BlackItalic.ttf": "/dist/fonts/Montserrat/Montserrat-BlackItalic.ttf",
     "/dist/fonts/Montserrat/Montserrat-Bold.ttf": "/dist/fonts/Montserrat/Montserrat-Bold.ttf",
@@ -40,5 +48,6 @@
     "/dist/fonts/Poppins/Poppins-SemiBold.ttf": "/dist/fonts/Poppins/Poppins-SemiBold.ttf",
     "/dist/fonts/Poppins/Poppins-SemiBoldItalic.ttf": "/dist/fonts/Poppins/Poppins-SemiBoldItalic.ttf",
     "/dist/fonts/Poppins/Poppins-Thin.ttf": "/dist/fonts/Poppins/Poppins-Thin.ttf",
-    "/dist/fonts/Poppins/Poppins-ThinItalic.ttf": "/dist/fonts/Poppins/Poppins-ThinItalic.ttf"
+    "/dist/fonts/Poppins/Poppins-ThinItalic.ttf": "/dist/fonts/Poppins/Poppins-ThinItalic.ttf",
+    "/dist/css/app.css": "/dist/css/app.css"
 }

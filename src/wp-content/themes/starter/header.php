@@ -24,64 +24,14 @@
 
 <body <?php body_class(); ?>>
 
+  <div class="alertBar">
+    <a href="">We’re hiring now – learn about our culture</a>
+  </div>
 
-  <div id="page" class="site">
-    <header class="header">
-      <div class="container">
-        <div class="headerInner">
-          <div class="headerLeft">
-            <div class="headerLogo">
-              <h1>Logo</h1>
-            </div>
-            <div class="hamburgerWrapper">
-              <h4>Menu</h4>
-              <button class="hamburgerBtn">
-                <span class="hamburgerIcon"></span>
-                <span class="hamburgerIcon"></span>
-                <span class="hamburgerIcon"></span>
-              </button>
-            </div>
-          </div>
-
-          <div class="navigation">
-            <nav>
-              <ul>
-                <?php
-                wp_nav_menu(
-                  array(
-                    'container'  => '',
-                    'items_wrap' => '%3$s',
-                    'theme_location' => 'primary',
-                  )
-                );
-
-                ?>
-              </ul>
-            </nav>
-            <div class="socialLinks">
-              <ul>
-                <li>
-                  <a href=""><i class="fab fa-facebook" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                  <a href=""><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                  <a href=""><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                  <a href=""><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                  <a href=""><i class="fab fa-reddit-alien" aria-hidden="true"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+  <header class="header">
+    <p>Hi there</p>
+  </header>
 
 
-      </div>
-    </header>
 
-    <main id="primary" class="site-main">
+  <main id="primary" class="site-main">
