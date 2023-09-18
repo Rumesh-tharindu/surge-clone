@@ -1,28 +1,23 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Laxend";
-  font-weight: 300;
-  src: url("../fonts/Lexend/Lexend-Light.ttf") format("ttf");
+  src: url("../fonts/Lexend/Lexend-Light.ttf");
 }
 @font-face {
   font-family: "Laxend-regular";
-  font-weight: 400;
-  src: url("../fonts/Lexend/Lexend-Regular.ttf") format("ttf");
+  src: url("../fonts/Lexend/Lexend-Regular.ttf");
 }
 @font-face {
   font-family: "Laxend-medium";
-  font-weight: 500;
-  src: url("../fonts/Lexend/Lexend-Medium.ttf") format("ttf");
+  src: url("../fonts/Lexend/Lexend-Medium.ttf");
 }
 @font-face {
   font-family: "Laxend-semibold";
-  font-weight: 600;
-  src: url("../fonts/Lexend/Lexend-SemiBold.ttf") format("ttf");
+  src: url("../fonts/Lexend/Lexend-SemiBold.ttf");
 }
 @font-face {
   font-family: "Laxend-bold";
-  font-weight: 700;
-  src: url("../fonts/Lexend/Lexend-Bold.ttf") format("ttf");
+  src: url("../fonts/Lexend/Lexend-Bold.ttf");
 }
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
